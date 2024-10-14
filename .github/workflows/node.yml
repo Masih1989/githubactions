@@ -9,10 +9,10 @@ on:
 jobs:
   Running-on-test-env:
     runs-on: ubuntu-latest
-    environment: test
+    environment: dev
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
     - name: Printing first message
-      run: echo "This step only runs on the main branch"
+      run: echo "This step only runs on dev env, and requires code review"
